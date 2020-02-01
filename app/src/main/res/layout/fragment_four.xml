@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Fragments.FourFragment"
+    android:id="@+id/main_parent_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Journal"
+            android:textSize="18sp"
+            android:textColor="#040404" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#070707"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gone_layout_f4"
+        android:layout_margin="20dp">
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/subscribing_logo"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/above_sub_image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subscribe to get more"
+            android:textColor="#fdba46"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:layout_below="@+id/above_sub_image"
+            android:layout_marginTop="30dp"
+            android:id="@+id/first_string"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="content and to enjoy"
+            android:textColor="#fdba46"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:layout_below="@+id/first_string"
+            android:id="@+id/second_string"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="latest features"
+            android:textColor="#fdba46"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_below="@+id/second_string"
+            android:id="@+id/third_string"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Subscribe"
+            android:textSize="18sp"
+            style="@style/started_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/third_string"
+            android:id="@+id/get_subscribed_f4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="No thanks"
+            android:textSize="10sp"
+            android:textColor="#cececd"
+            android:layout_below="@+id/get_subscribed_f4"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gratitude_layout">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:indeterminateDrawable="@xml/progress_edit"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blank_hor"
+            android:id="@+id/g_shade"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/gratitude_image" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Gratitude"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/gratitude_text"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/manifest_layout">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:indeterminateDrawable="@xml/progress_edit"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blank_hor"
+            android:id="@+id/m_shade"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/Manifestation_image" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manifestation"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/journal_txt"/>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

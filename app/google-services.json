@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "790686367891",
+    "firebase_url": "https://idillionaire-206401.firebaseio.com",
+    "project_id": "idillionaire-206401",
+    "storage_bucket": "idillionaire-206401.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790686367891:android:0aa323888a43e72d",
+        "android_client_info": {
+          "package_name": "com.idillionaire.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790686367891-635lvc89sn52cise0ggj1itpd7clt957.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.idillionaire.app",
+            "certificate_hash": "9bbe54832408f349d9275b59e9f028cb9a1527b4"
+          }
+        },
+        {
+          "client_id": "790686367891-caen4up6c8v1sosk67n1qgcvj7dlo971.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPDbJPD6pTCuCkZYPkFToX6Ml8UepF_S0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790686367891-caen4up6c8v1sosk67n1qgcvj7dlo971.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

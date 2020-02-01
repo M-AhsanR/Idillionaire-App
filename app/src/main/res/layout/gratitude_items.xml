@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/swipe"
+    app:leftEdgeSwipeOffset="0dp"
+    app:rightEdgeSwipeOffset="0dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom=".5dp">
+
+
+    <LinearLayout
+        android:id="@+id/slide_right"
+        android:layout_width="240dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:gravity="right">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fbc05a"
+            android:id="@+id/edit"
+            android:gravity="center">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:src="@drawable/gratitude_notes" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff0000"
+            android:id="@+id/delete"
+            android:gravity="center">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:src="@drawable/gratitude_delete" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:elevation="5dp"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/main_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Mountain"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:inputType="textMultiLine"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:text="Date"
+            android:textColor="#8e8b8b"
+            android:textSize="12sp"
+            android:layout_below="@+id/main_txt"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gratitude_next"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:id="@+id/next_btn"/>
+
+    </RelativeLayout>
+
+
+</com.daimajia.swipe.SwipeLayout>
+

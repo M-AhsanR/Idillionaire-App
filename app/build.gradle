@@ -1,0 +1,126 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.idillionaire.app"
+        minSdkVersion 16
+        targetSdkVersion 27
+        multiDexEnabled true
+        versionCode 20
+        versionName "1.0.19"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            testCoverageEnabled = false
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:support-annotations:27.1.1'
+    //Recycler View
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    //Story Library
+    implementation 'com.github.shts:StoriesProgressView:2.0.0'
+    //SwipeLibrary
+    implementation 'com.daimajia.swipelayout:library:1.2.0@aar'
+    //Volley Library
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    //Glide Library
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    // piASOO
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+    // Circle Image
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    // FB SDK
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    // BillingClient
+//    implementation 'com.anjlab.android.iab.v3:library:1.0.44'
+    implementation 'com.android.billingclient:billing:1.1'
+    // Dex
+    implementation 'com.android.support:multidex:1.0.3'
+    // TwitterActivity
+    // TwitterActivity Android SDK (only required for TwitterActivity Login)
+    implementation 'com.twitter.sdk.android:twitter-core:3.3.0'
+    implementation 'com.twitter.sdk.android:twitter:3.3.0'
+
+    // viewpager indicator
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+
+    // Google
+
+    implementation 'com.google.android.gms:play-services-auth:16.0.0'
+    implementation 'com.google.api-client:google-api-client:1.22.0'
+    implementation 'com.google.api-client:google-api-client-android:1.22.0'
+    implementation 'com.google.apis:google-api-services-people:v1-rev139-1.22.0'
+//    implementation 'com.google.gms:google-services:4.0.2'
+    implementation 'com.google.android.gms:play-services-ads:15.0.1'
+    implementation 'com.google.android.gms:play-services-analytics:16.0.1'
+    implementation 'com.google.code.gson:gson:2.8.4'
+
+    // Firebase
+
+    implementation 'com.google.firebase:firebase-auth:16.0.3'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+
+    // firebase messaging
+
+    implementation 'com.google.firebase:firebase-messaging:17.3.0'
+
+    // Apache HTTP Client
+
+//    implementation 'org.apache.httpcomponents:httpclient:4.5.6'
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.4@aar') {
+        transitive = true;
+    }
+
+}
+apply plugin: 'com.google.gms.google-services'

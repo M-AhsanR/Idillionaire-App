@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ManifestDetail"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/main_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/back_meni_detail">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manifestations Detail"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="#040404"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#070707"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is your manifest today?"
+                android:textColor="#fbc05a"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            style="@style/edit_fieldcomplete"
+            android:layout_margin="10dp">
+            <EditText
+                android:id="@+id/menifest_txt"
+                style="@style/recycler_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:ems="13"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:gravity="top"
+                android:scrollbars="vertical"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp"
+                android:textColor="#040404"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed ?"
+                android:textColor="#040404"
+                android:textStyle="bold"/>
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:thumbTint="#f1f1f1"
+                app:trackTint="#fbc05a"
+                android:id="@+id/update_switch"
+                android:textOn="true"
+                android:textOff="false"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BFBEC3"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Submit"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                style="@style/started_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#ffffff"
+                android:id="@+id/submit_btn" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

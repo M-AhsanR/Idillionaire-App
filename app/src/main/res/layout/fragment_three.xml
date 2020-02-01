@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ThreeFragment"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scheduled"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="#040404"
+            android:id="@+id/title_pass"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#070707"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gone_layout_f3"
+        android:layout_margin="20dp">
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/subscribing_logo"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/above_sub_image1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subscribe to get more"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fdba46"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_below="@+id/above_sub_image1"
+            android:layout_marginTop="30dp"
+            android:id="@+id/first_string1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="content and to enjoy"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fdba46"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_below="@+id/first_string1"
+            android:id="@+id/second_string1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="latest features"
+            android:textColor="#fdba46"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:layout_below="@+id/second_string1"
+            android:id="@+id/third_string1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Subscribe"
+            android:textSize="18sp"
+            style="@style/started_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/third_string1"
+            android:id="@+id/get_subscribed_f3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="No thanks"
+            android:textSize="10sp"
+            android:textColor="#cececd"
+            android:layout_below="@+id/get_subscribed_f3"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/schedual_recycler"
+        android:background="#bdbcbc"></android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

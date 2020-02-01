@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dailog_background_style"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Purchase Subscription"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="to Unlock the Book Club purchase subscription"
+        android:textColor="#333333"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Ok"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            style="@style/started_button"
+            android:textColor="#ffffff"
+            android:id="@+id/forgot_send" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            style="@style/cancle_button"
+            android:textColor="#FB0920"
+            android:id="@+id/forgot_cancle"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

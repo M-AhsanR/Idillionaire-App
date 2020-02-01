@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="NumberPickerStyle">
+        <item name="colorControlNormal">#fbc05a</item>
+    </style>
+    <style name="started_button">
+        <item name="android:background">@drawable/start_button_style</item>
+    </style>
+    <style name="cancle_button">
+        <item name="android:background">@drawable/cancle_btn_style</item>
+    </style>
+    <style name="edit_fieldcomplete">
+        <item name="android:background">@drawable/edit_field_complete</item>
+    </style>
+    <style name="edit_fieldbackgroundlogin">
+        <item name="android:background">@drawable/edit_field_backgroundlogin</item>
+    </style>
+    <style name="recycler_style">
+        <item name="android:background">@drawable/recycler_editview_style</item>
+    </style>
+    <style name="schedule_layout_style">
+        <item name="android:background">@drawable/schedule_layout_style</item>
+    </style>
+
+</resources>

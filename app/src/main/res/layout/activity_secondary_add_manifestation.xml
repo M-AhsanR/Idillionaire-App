@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddManifestation"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/main_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:id="@+id/back_add_meni">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Manifestations"
+            android:layout_centerInParent="true"
+            android:textColor="#040404"
+            android:id="@+id/add_menifest_title"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#070707"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is your manifest today?"
+                android:textColor="#fbc05a"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:id="@+id/main_title"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            style="@style/edit_fieldcomplete"
+            android:layout_margin="10dp">
+            <EditText
+                android:id="@+id/menifest_txt"
+                style="@style/recycler_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:hint="Share your experience..."
+                android:inputType="textMultiLine"
+                android:ems="9"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:gravity="top"
+                android:scrollbars="vertical"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Submit"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                style="@style/started_button"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#ffffff"
+                android:id="@+id/submit_btn" />
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

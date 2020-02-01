@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:background="@drawable/black">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:indeterminateDrawable="@xml/progress_edit"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/fvrt_img"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:src="@drawable/black"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/remove">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/heart_logo"
+            android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

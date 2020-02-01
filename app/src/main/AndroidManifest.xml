@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.idillionaire.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon_main"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icon_main"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.GetStarted"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.HomePage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SelectedCategory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.StoryMode"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.EditProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.DailyGratitude"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ArivalPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ManifestaionPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.DailyManifestation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.AddManifestation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ManifestDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.DetailedImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.UpdateGratitude"
+            android:screenOrientation="portrait" />
+
+        <!--
+          Optionally, register AnalyticsReceiver and AnalyticsService to support background
+          dispatching on non-Google Play devices
+        -->
+
+        <receiver android:name=".Notificatins.NotificationReciever" />
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0f777914e2f70b784a6551b1835e58d5d5479888" />
+
+        <activity
+            android:name=".Activities.ReportProblem"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TermstoUse"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PrivacyPolicy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ScheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SecondaryAddManifestation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.BookClub"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.GoogleSignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PremiumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TwitterActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".FireBaseInstance.MyFireBaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FireBaseInstance.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Activities.BookClubDetail"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.ScheduledDetailImage"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

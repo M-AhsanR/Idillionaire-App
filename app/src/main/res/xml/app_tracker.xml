@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="idol_sessionTime">300</integer>
+    <bool name="idol_autoActivityTracking">true</bool>
+    <string name="idol_trackingId">UA-121810080-1</string>
+    <string name="idol_sampleFrequency">100.0</string>
+    <bool name="idol_reportUncaughtExceptions">true</bool>
+
+
+</resources>

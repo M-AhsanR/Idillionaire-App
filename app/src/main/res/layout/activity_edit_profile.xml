@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EditProfile"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@color/white"
+    android:id="@+id/edit_main_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profile"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="#040404"
+            android:id="@+id/title_profile"/>
+    <RelativeLayout
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/back_settings">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#070707"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        style="@style/edit_fieldcomplete"
+        android:layout_margin="15dp">
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Full Name"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:inputType="textEmailAddress"
+            style="@style/edit_fieldbackgroundlogin"
+            android:id="@+id/change_name" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#C6C5CA"
+            ></LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:textCursorDrawable="@null"
+            android:text="Test"
+            android:textColor="#040404"
+            android:textSize="17sp"
+            android:focusable="true"
+            android:inputType="textEmailAddress"
+            style="@style/edit_fieldbackgroundlogin"
+            android:id="@+id/change_email" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Update"
+            android:textSize="18sp"
+            style="@style/started_button"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:id="@+id/update_btn" />
+    </LinearLayout>
+
+</LinearLayout>

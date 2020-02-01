@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.StoryMode">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:indeterminateDrawable="@xml/progress_edit"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/black"
+        android:id="@+id/image"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/above_layout"
+            android:layout_marginLeft="17dp">
+            <ProgressBar
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                android:indeterminateDrawable="@xml/progress_edit"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/title_image"
+            android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/above_layout"
+            android:text="Hope"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/story_title"/>
+
+        <RelativeLayout
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/back_story"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arival_cross"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <View
+            android:id="@+id/reverse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="45dp"/>
+
+        <View
+            android:id="@+id/skip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="45dp"/>
+    </LinearLayout>
+
+    <jp.shts.android.storiesprogressview.StoriesProgressView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:id="@+id/stories_bar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp">
+    </jp.shts.android.storiesprogressview.StoriesProgressView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn1"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/like"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/story_like" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@id/btn1"
+            android:id="@+id/btn2"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/story_schedual_filled"
+                android:id="@+id/schedual"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@id/btn2"
+            android:id="@+id/btn3"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/story_share"
+                android:id="@+id/share"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@id/btn3"
+            android:id="@+id/btn4"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/story_bookmark"
+                android:id="@+id/bookmark"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
