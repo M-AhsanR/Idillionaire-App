@@ -651,7 +651,7 @@ public class LoginActivity extends AppCompatActivity {
 
                         // For Admin User
 
-                        if (email_login.getText().toString().equals("admin@idil.com")){
+                        if (email_login.getText().toString().equals("")){
                             sp = getSharedPreferences("PURCHASEDATA", MODE_PRIVATE);
                             sp.edit().putString("PURCHASETOKEN", "subscribed user").apply();
                         }

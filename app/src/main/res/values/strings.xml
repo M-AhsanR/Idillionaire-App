@@ -55,8 +55,8 @@
     <string name="btn_app_crash">Track App Crash</string>
     <string name="btn_load_fragment">Fragment Tracking</string>
 
-    <string name="facebook_app_id">274498999807334</string>
-    <string name="fb_login_protocol_scheme">fb274498999807334</string>
+    <string name="facebook_app_id"></string>
+    <string name="fb_login_protocol_scheme"></string>
 
     <string name="id_token_fmt">ID Token: %s</string>
 
@@ -113,11 +113,11 @@
     <!-- TODO(user): replace with your real server client ID -->
     <!-- Server Client ID.  This should be a valid Web OAuth 2.0 Client ID obtained
          from https://console.developers.google.com/ -->
-    <string name="server_client_id">790686367891-caen4up6c8v1sosk67n1qgcvj7dlo971.apps.googleusercontent.com</string>
+    <string name="server_client_id"></string>
 
     // Twitter
-    <string name="com.twitter.sdk.android.CONSUMER_KEY" tools:ignore="ExtraTranslation">FuipP0lP3pQAOiPR50VAqmRr1</string>
-    <string name="com.twitter.sdk.android.CONSUMER_SECRET" tools:ignore="ExtraTranslation">eeH8XNQNj3l1yRDlCmvFr37SBTOe0WJ7IshPEFzRs34OyNqxoE</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY" tools:ignore="ExtraTranslation"></string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET" tools:ignore="ExtraTranslation"></string>
 
 
     // Sample Adds
@@ -129,10 +129,6 @@
     // Sample Adds
 
     // Original Adds
-
-    <!--<string name="add_app_id">ca-app-pub-7419167613886667~8417138460</string>-->
-<!---->
-    <!--<string name="add_add_id">ca-app-pub-7419167613886667/5024688360</string>-->
 
     // Original Adds
 

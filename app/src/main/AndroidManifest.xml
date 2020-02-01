@@ -92,7 +92,7 @@
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="0f777914e2f70b784a6551b1835e58d5d5479888" />
+            android:value="" />
 
         <activity
             android:name=".Activities.ReportProblem"
